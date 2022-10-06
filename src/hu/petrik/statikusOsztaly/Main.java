@@ -13,6 +13,10 @@ public class Main {
             System.out.println(Veletlen.velEgesz(5,10));
         }
 
+        for(int i = 0; i < 50; i++){
+            System.out.println(Veletlen.velKarakter((char) 30, (char) 50));//'A','C'
+        }
+
         /*
         Main r = new Main();
         System.out.println(r.nemStatikusTag);
