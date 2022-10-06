@@ -2,10 +2,9 @@ package hu.petrik.statikusOsztaly;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import java.time.LocalDate;
+import java.util.*;
+import java.util.concurrent.ThreadLocalRandom;
 
 public final class Veletlen {
     private Veletlen(){}
@@ -73,6 +72,35 @@ public final class Veletlen {
 
     public static String velTeljesNev(boolean nem){
         return velVezetekNev()+ " " + velKeresztNev(nem);
+    }
+
+    public static String velDatum(int ev1, int ev2){
+        int day = velEgesz(1,28);
+        int month = velEgesz(1,12);
+        int year = 0;
+        if(ev1 < ev2){
+            year = velEgesz(ev1,ev2);
+        }else{
+            year = velEgesz(ev2,ev1);
+        }
+        return String.format("%d.%d.%d",year,month,day);
+    }
+
+    public static String velEmail(String nev){
+        String splitName = nev;
+        return null;
+    }
+
+    public static String velMobil(){
+        return null;
+    }
+
+    public static String velSportag(){
+        return null;
+    }
+
+    public static String velSportEgyesulet(){
+        return null;
     }
 
 }
