@@ -13,8 +13,22 @@ public class Main {
             System.out.println(Veletlen.velEgesz(5,10));
         }
 
+        System.out.println();
+
         for(int i = 0; i < 50; i++){
             System.out.println(Veletlen.velKarakter((char) 30, (char) 50));//'A','C'
+        }
+
+        System.out.println();
+
+        for (int i = 0; i < 5; i++){
+            System.out.println(Veletlen.velTeljesNev(true));
+        }
+
+        System.out.println();
+
+        for (int i = 0; i < 5; i++){
+            System.out.println(Veletlen.velTeljesNev(false));
         }
 
         /*
