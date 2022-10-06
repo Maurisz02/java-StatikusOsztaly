@@ -97,7 +97,16 @@ public final class Veletlen {
     }
 
     public static String velMobil(){
-        return null;
+        int num1 = 36;
+        int num2 = rnd.nextInt(8)+1;
+        int num3 = rnd.nextInt(8);
+
+         int set2 = rnd.nextInt(643) + 100;
+
+         int set3 = rnd.nextInt(8999) + 1000;
+
+        String mobile ="+"+num1+"("+ num2 + "" + num3 + ")" + "-" + set2 + "-" + set3;
+        return mobile;
     }
 
     public static String velSportag(){

@@ -41,5 +41,7 @@ public class Main {
 
         System.out.println(Veletlen.velEmail("Pintér Ádám"));
 
+        System.out.println(Veletlen.velMobil());
+
     }
 }
