@@ -39,9 +39,15 @@ public class Main {
 
         System.out.println();
 
+        System.out.println(Veletlen.velDatum(2000, 2010));
+
         System.out.println(Veletlen.velEmail("Pintér Ádám"));
 
         System.out.println(Veletlen.velMobil());
+
+        System.out.println(Veletlen.velSportag());
+
+        System.out.println(Veletlen.velSportEgyesulet());
 
     }
 }
