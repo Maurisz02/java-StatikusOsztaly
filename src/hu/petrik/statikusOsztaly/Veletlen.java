@@ -2,6 +2,7 @@ package hu.petrik.statikusOsztaly;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.text.Normalizer;
 import java.time.LocalDate;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
@@ -87,8 +88,12 @@ public final class Veletlen {
     }
 
     public static String velEmail(String nev){
-        String splitName = nev;
-        return null;
+        int szam = rnd.nextInt(100);
+        String egybeNev = nev.replace(" ", "");
+        String email =  egybeNev.toLowerCase(Locale.ROOT) + szam + "@gmail.com";
+        email = Normalizer.normalize(email, Normalizer.Form.NFD);
+        email = email.replaceAll("[\\p{InCombiningDiacriticalMarks}]", "");
+        return email;
     }
 
     public static String velMobil(){

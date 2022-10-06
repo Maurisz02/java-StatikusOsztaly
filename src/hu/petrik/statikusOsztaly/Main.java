@@ -37,5 +37,9 @@ public class Main {
         System.out.println(Main.statikusTag);
         */
 
+        System.out.println();
+
+        System.out.println(Veletlen.velEmail("Pintér Ádám"));
+
     }
 }
